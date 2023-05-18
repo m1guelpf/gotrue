@@ -564,6 +564,9 @@ func (a *API) Provider(ctx context.Context, name string, scopes string) (provide
 	case "workos":
 		config.External.WorkOS.RedirectURI = callbackURL
 		return provider.NewWorkOSProvider(config.External.WorkOS)
+	case "worldcoin":
+		config.External.Worldcoin.RedirectURI = callbackURL
+		return provider.NewWorldcoinProvider(config.External.Worldcoin)
 	case "zoom":
 		config.External.Zoom.RedirectURI = callbackURL
 		return provider.NewZoomProvider(config.External.Zoom)

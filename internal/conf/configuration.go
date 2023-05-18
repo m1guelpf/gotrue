@@ -154,6 +154,7 @@ type ProviderConfiguration struct {
 	Twitter                 OAuthProviderConfiguration `json:"twitter"`
 	Twitch                  OAuthProviderConfiguration `json:"twitch"`
 	WorkOS                  OAuthProviderConfiguration `json:"workos"`
+	Worldcoin               OAuthProviderConfiguration `json:"worldcoin"`
 	Email                   EmailProviderConfiguration `json:"email"`
 	Phone                   PhoneProviderConfiguration `json:"phone"`
 	Zoom                    OAuthProviderConfiguration `json:"zoom"`

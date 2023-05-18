@@ -18,6 +18,7 @@ type ProviderSettings struct {
 	Spotify   bool `json:"spotify"`
 	Slack     bool `json:"slack"`
 	WorkOS    bool `json:"workos"`
+	Worldcoin bool `json:"worldcoin"`
 	Twitch    bool `json:"twitch"`
 	Twitter   bool `json:"twitter"`
 	Email     bool `json:"email"`
@@ -57,6 +58,7 @@ func (a *API) Settings(w http.ResponseWriter, r *http.Request) error {
 			Twitch:    config.External.Twitch.Enabled,
 			Twitter:   config.External.Twitter.Enabled,
 			WorkOS:    config.External.WorkOS.Enabled,
+			Worldcoin: config.External.Worldcoin.Enabled,
 			Email:     config.External.Email.Enabled,
 			Phone:     config.External.Phone.Enabled,
 			Zoom:      config.External.Zoom.Enabled,
